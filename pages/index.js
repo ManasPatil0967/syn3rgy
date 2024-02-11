@@ -28,6 +28,7 @@ export default function Component() {
           </Link>
         </div>
       </nav>
+        <div className="items-center justify-center ">
       <section id="title" className="w-full py-12 md:py-24 lg:py-32 xl:py-48 items-center justify-center">
         <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="space-y-3">
@@ -293,6 +294,7 @@ export default function Component() {
         </div>
       </section>
     </div>
+      </div>
   )
 }
 
