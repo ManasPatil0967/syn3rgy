@@ -1,0 +1,72 @@
+.text-style {
+    color: white;
+
+    /* color: #7c872c; */
+    /* font-family: "Passion One", sans-serif; */
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    -webkit-text-stroke-width: 2.377882957458496;
+    -webkit-text-stroke-color: #000;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 8.656px;
+}
+
+
+.card1 {
+    padding: 60px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 0.367px solid #fb0707;
+
+    background: linear-gradient(180deg, rgba(251, 23, 7, 0.6) 0%, rgba(136, 33, 33, 0.7) 42.58%, rgba(32, 2, 2, 0.2) 60%);
+
+    box-shadow: -7px 8px 20px -0.367px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(3.6708710193634033px);
+}
+
+.card2 {
+    padding: 60px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 0.367px solid #FBD007;
+
+    background: linear-gradient(180deg, rgba(251, 227, 7, 0.6) 0%, rgba(183, 174, 2, 0.7) 42.58%, rgba(50, 61, 19, 0.2) 60%);
+
+    box-shadow: -7px 8px 20px -0.367px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(3.6708710193634033px);
+}
+
+.card3 {
+    padding: 60px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 0.367px solid #070bfb;
+
+    background: linear-gradient(180deg, rgba(10, 13, 223, 0.6) 0%, rgba(5, 0, 102, 0.3) 42.58%, rgba(32, 2, 2, 0.2) 60%);
+
+    box-shadow: -7px 8px 20px -0.367px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(3.6708710193634033px);
+}
+
+/* li {
+    list-style-type: circle;
+    text-align: center;
+    font-family: "Chakra Petch";
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+} */

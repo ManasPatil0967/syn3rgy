@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: "Chakra Petch", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(116deg, #0c060f, #5a0d19, #32195c);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.text-primary-strokes {
+
+  -webkit-text-stroke: 2px black; /* First stroke color and width */
+  text-stroke: 2px black;
+  position: relative;
+  color: white;
+}
+.text-primary-strokes::before, .text-primary-strokes::after {
+  content: attr(data-content);
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-stroke: 4px #FBD005; /* Second stroke color and width */
+  z-index:-1;
+  -webkit-text-stroke: 4px #FBD005;
+}
+
+
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+
+main {
+  scroll-behavior: smooth;
+}
+
+
+/* section {
+  position: sticky;
+  top:0;
+  bottom: -100%;
+} */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
