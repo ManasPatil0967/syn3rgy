@@ -181,7 +181,7 @@
         top: -14%;
     }
     .inner_section_left, .inner_section_right{
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
     .inner_section_left span, .inner_section_right span{
         width: 35vw;
@@ -216,11 +216,11 @@
 
 @media only screen and (max-width : 600px) {
     .inner_section_left {
-        border-right: 2rem solid #FBD007;
+        border-right: 1rem solid #FBD007;
     }
 
     .inner_section_right {
-        border-left: 2rem solid #FBD007;
+        border-left: 1rem solid #FBD007;
         margin-right: 0;
     }
 

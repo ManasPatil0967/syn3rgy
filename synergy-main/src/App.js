@@ -42,7 +42,7 @@ function App() {
             <img
               src={heroLego}
               alt="lego"
-              className="h-80 md:h-[56rem] absolute top-1/3 animate__rotateInUpLeft animate__animated animate__slow"
+              className="h-80 md:h-[56rem] absolute top-2/4 animate__rotateInUpLeft animate__animated animate__slow"
             />
           </div>
           <div className="flex flex-col max-w-screen items-center md:items-end h-full justify-end gap-4 md:justify-between p-10 overflow-hidden">
@@ -102,7 +102,7 @@ With a diverse range of tech domains including Data science, AI & ML, Blockchain
           </h1>
           <h3             className="text-white  text-2xl text-center md:text-4xl tracking-widest"
 > Platinum Sponsors</h3>
-          <div className="flex gap-10  p-4 items-center justify-center">
+          <div className="flex flex-col md:flex-row gap-10  p-4 items-center justify-center">
             <img
               className="w-64 hover:scale-105 ease-in-out duration-500"
               src={devfolio}
@@ -121,13 +121,22 @@ With a diverse range of tech domains including Data science, AI & ML, Blockchain
           </div>
           {/* <Sponsors></Sponsors> */}
         </section>
-        {/* <section id="faqs" className="h-screen">
+        <section id="faqs" className="h-screen pt-40">
           <h1 className="text-style">FAQs</h1>
         </section>
-        <section id="contact" className="h-screen">
-          <h1 className="text-style">Contact</h1>
+        <section id="contact" className="">
+          <h1  className="font-semibold text-4xl text-center md:text-8xl tracking-widest text-primary-strokes"
+            data-content="Contact">Contact</h1>
           <Contact/>
-        </section> */}
+        </section>
+
+        <footer className="pt-10 flex justify-between flex-row-reverse md:px-10 md:pl-44">
+        <div className="text-white font-medium tracking-wide">Developed with ❤ by Technical Team</div>
+<div className="relative">
+  <div className=" text-white  font-semibold font-['Chakra Petch'] tracking-widest">ISACA - SIGAI -  NSDC</div>
+  {/* <div className="left-0 top-0 absolute text-white font-semibold font-['Chakra Petch'] tracking-widest">ISACA  SIGAI   NSDC</div> */}
+</div>
+        </footer>
       </main>
     </>
   );

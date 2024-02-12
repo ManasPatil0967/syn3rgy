@@ -15,14 +15,17 @@ import {
 import { ReactComponent as Logo } from "../assests/logo.svg";
 import { useState } from "react";
 import 'animate.css'
+import { FiMenu } from "react-icons/fi";
 
 
 const Navbar = () => {
   const [current, setcurrent] = useState("home");
   return (
-    <nav className="fixed left-0 h-screen flex flex-col justify-between z-10 ">
-      <div className="p-4 animate__fadeInLeft animate__animated">
+    <nav className="fixed left-0 h-screen flex flex-col justify-between z-10">
+      <div className="flex md:w-auto w-screen justify-between items-center p-4 animate__fadeInLeft animate__animated">
         <Logo className="h-10" />
+        <FiMenu size={24} color="white"/>
+
       </div>
 
       <div className="p-4 flex flex-col gap-4 animate__fadeInLeft animate__animated animate__slow">
