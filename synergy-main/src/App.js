@@ -40,7 +40,7 @@ function App() {
         {/* a 100vh container, each section slide up like caraousel */}
         {/* use section for each with id="{name}" */}
         <section id="home" className="relative flex h-screen flex-col justify-center ">
-          <img src={collab} alt="logo all"  className="absolute top-0 right-4 h-16"/>
+          <img src="./assests/collab.png" alt="logo all"  className="absolute top-0 right-4 h-16"/>
           <div className="flex relative h-full flex-col items-center justify-end">
             <Hero className="w-80 md:w-[800px] animate__fadeInDown animate__animated" />
             <img
