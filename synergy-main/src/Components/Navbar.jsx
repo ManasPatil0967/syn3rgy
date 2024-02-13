@@ -16,24 +16,26 @@ import { ReactComponent as Logo } from "../assests/logo.svg";
 import { useState } from "react";
 import 'animate.css'
 import { FiMenu } from "react-icons/fi";
+import { FiX } from "react-icons/fi";
 
 
 const Navbar = () => {
   const [current, setcurrent] = useState("home");
-  return (
-    <nav className="fixed left-0 h-screen flex flex-col justify-between z-10">
-      <div className="flex md:w-auto w-screen justify-between items-center p-4 animate__fadeInLeft animate__animated">
-        <Logo className="h-10" />
-        <FiMenu size={24} color="white"/>
+  const [nav, setNav] = useState(true)
 
+
+  return (<>
+    <nav className="fixed left-0 h-screen flex flex-col justify-between z-10 pointer-events-none">
+      <div className=" flex md:w-auto w-screen justify-between items-center p-4 animate__fadeInLeft animate__animated">
+        <Logo className="h-10" />
       </div>
 
-      <div className="p-4 flex flex-col gap-4 animate__fadeInLeft animate__animated animate__slow">
+       <div className={`p-4 flex flex-col gap-4 animate__fadeInLeft animate__animated animate__slow  md:flex ${nav && 'hidden'} backdrop-blur-lg md:backdrop-blur-none max-w-min rounded-3xl `}>
         <a
           href="#home"
           className={`text-white text-sm font-medium tracking-widest flex gap-2 items-center uppercase ${
             current === "home" ? null : "opacity-60"
-          } hover:opacity-80`}
+          } hover:opacity-80 pointer-events-auto`}
           onClick={() => setcurrent("home")}
         >
           <FiHome size="18" />
@@ -43,7 +45,7 @@ const Navbar = () => {
           href="#about"
           className={`text-white text-sm font-medium tracking-widest flex gap-2 items-center uppercase ${
             current === "about" ? null : "opacity-60"
-          } hover:opacity-80`}
+          } hover:opacity-80 pointer-events-auto`}
           onClick={() => setcurrent("about")}
         >
           <FiBookOpen size="18" />
@@ -54,7 +56,7 @@ const Navbar = () => {
           href="#prizes"
           className={`text-white text-sm font-medium tracking-widest flex gap-2 items-center uppercase ${
             current === "prizes" ? null : "opacity-60"
-          } hover:opacity-80`}
+          } hover:opacity-80 pointer-events-auto`}
           onClick={() => setcurrent("prizes")}
         >
           <FiAward size="18" />
@@ -65,7 +67,7 @@ const Navbar = () => {
           href="#timeline"
           className={`text-white text-sm font-medium tracking-widest flex gap-2 items-center uppercase ${
             current === "timeline" ? null : "opacity-60"
-          } hover:opacity-80`}
+          } hover:opacity-80 pointer-events-auto`}
           onClick={() => setcurrent("timeline")}
         >
           <FiCalendar size="18" />
@@ -76,7 +78,7 @@ const Navbar = () => {
           href="#sponsors"
           className={`text-white text-sm font-medium tracking-widest flex gap-2 items-center uppercase ${
             current === "sponsors" ? null : "opacity-60"
-          } hover:opacity-80`}
+          } hover:opacity-80 pointer-events-auto`}
           onClick={() => setcurrent("sponsors")}
         >
           <FiUsers size="18" />
@@ -87,7 +89,7 @@ const Navbar = () => {
           href="#faqs"
           className={`text-white text-sm font-medium tracking-widest flex gap-2 items-center uppercase ${
             current === "faqs" ? null : "opacity-60"
-          } hover:opacity-80`}
+          } hover:opacity-80 pointer-events-auto`}
           onClick={() => setcurrent("faqs")}
         >
           <FiHelpCircle size="18" />
@@ -98,7 +100,7 @@ const Navbar = () => {
           href="#contact"
           className={`text-white text-sm font-medium tracking-widest flex gap-2 items-center uppercase ${
             current === "contact" ? null : "opacity-60"
-          } hover:opacity-80`}
+          } hover:opacity-80 pointer-events-auto`}
           onClick={() => setcurrent("contact")}
         >
           <FiMail size="18" />
@@ -106,7 +108,7 @@ const Navbar = () => {
         </a>
       </div>
 
-      <div className="flex flex-col md:flex-row animate__fadeInLeft animate__animated">
+      <div className="flex flex-col md:flex-row animate__fadeInLeft animate__animated pointer-events-auto">
         <a
           href="www.linkedin.com"
           target="_blank"
@@ -144,6 +146,8 @@ const Navbar = () => {
         </a>
       </div>
     </nav>
+    {!nav ? <FiX onClick={()=>setNav(!nav)} className="fixed top-4 right-4 pointer-events-auto cursor-pointer z-10 md:hidden" size={24} color="white"/>: <FiMenu onClick={()=>setNav(!nav)} className="fixed top-4 right-4 pointer-events-auto cursor-pointer z-10 md:hidden" size={24} color="white"/>}
+    </>
   );
 };
 

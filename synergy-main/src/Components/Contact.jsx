@@ -1,38 +1,62 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 import block3 from  "../assests/3-block.png"
 
 function Contact() {
+
+  const form = useRef();
+
+   
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_dbvdir9', 'template_yqd95fo', form.current, 'zTavVyyxXTKkfPZ3E')
+      .then((result) => {
+        toast.success('Message Sent Successfully!');
+          console.log(result.text);
+      }, (error) => {
+        toast.error('Message Failed to Send! Please Retry.');
+          console.log(error.text);
+      });
+  };
+
+
   return (
-    <div className="flex flex-col lg:flex-row items-center pt-20 gap-10 w-screen md:pl-40 pr-10 p-4">
-      <form className="w-full flex flex-col gap-4" action="">
+    <div className="flex flex-col lg:flex-row items-center pt-20 gap-10 w-screen md:pl-40 p-4 md:p-10">
+      <form ref={form} className="w-full flex flex-col gap-4" action="">
         <div className="flex gap-4">
           <input
             type="text"
             className="w-full md:h-12 text-base md:text-xl text-white focus:outline-none focus:bg-yellow-400 focus:bg-opacity-15 px-4 py-5 border-yellow-400 border-2 bg-transparent rounded-lg flex-col justify-center items-center gap-2 inline-flex animate__fadeInRight animate__animated animate__slow"
             placeholder="Name"
+            name='name'
           />
           <input
             type="email"
             className="w-full md:h-12 text-base md:text-xl text-white focus:outline-none focus:bg-yellow-400 focus:bg-opacity-15 px-4 py-5 border-yellow-400 border-2 bg-transparent rounded-lg flex-col justify-center items-center gap-2 inline-flex animate__fadeInRight animate__animated animate__slow"
             placeholder="Email"
+            name='email'
           />
         </div>
         <textarea
             type="text"
-            className="w-full h-64 text-base md:text-xl text-white focus:outline-none focus:bg-yellow-400 focus:bg-opacity-15 px-4 py-5 border-yellow-400 border-2 bg-transparent rounded-lg flex-col justify-center items-center gap-2 inline-flex animate__fadeInRight animate__animated animate__slow"
+            className="w-full h-36 text-base md:text-xl text-white focus:outline-none focus:bg-yellow-400 focus:bg-opacity-15 px-4 py-5 border-yellow-400 border-2 bg-transparent rounded-lg flex-col justify-center items-center gap-2 inline-flex animate__fadeInRight animate__animated animate__slow"
             placeholder="Message"
+            name='message'
           />
 
 
-<button type="submit" className="w-full bg-blue-500 h-14 md:h-16 hover:bg-opacity-70 ease-in-out duration-300 text-xl md:text-2xl text-white px-10 font-semibold py-5 rounded-lg flex-col justify-center items-center gap-2 inline-flex animate__fadeInRight animate__animated animate__slow">
+<button type="submit" onClick={sendEmail} value="Send" className="w-full bg-blue-500 h-14 md:h-16 hover:bg-opacity-70 ease-in-out duration-300 text-xl md:text-2xl text-white px-10 font-semibold py-5 rounded-lg flex-col justify-center items-center gap-2 inline-flex animate__fadeInRight animate__animated animate__slow">
               Send Message
             </button>
 
             <div className="text-white pt-10">
                         <h1 className=" text-3xl font-semibold">Any Queries ? </h1>
-                        <p>email us at : synergy@gmail.com</p>
+                        <p>email us at : djs.syn3rgy@gmail.com</p>
                     </div>
-    <div className="flex gap-4 flex-wrap">
+    <div className="flex gap-4 flex-wrap justify-center md:justify-start">
             <div class="relative">
                             <img className="" src={block3} height="120" width="200" />
                             <div class="absolute top-8 left-5 text-white">
@@ -50,7 +74,7 @@ function Contact() {
                         <div class="relative">
                             <img className="" src={block3} height="120" width="200" />
                             <div class="absolute top-8 left-5 text-white">
-                                <p>Krish</p>
+                                <p>Krish Gopani</p>
                                 <p>+919820591237</p>
                             </div>
                         </div>  

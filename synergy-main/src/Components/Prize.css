@@ -1,4 +1,5 @@
-.text-style {
+.text-style,
+.text-style-insidecard {
     color: white;
 
     /* color: #7c872c; */
@@ -14,6 +15,12 @@
     line-height: normal;
     letter-spacing: 8.656px;
 }
+
+/* Add a media query to apply styles only on screens with a maximum width of 640px (adjust as needed) */
+/* Add a media query to apply styles only on screens with a maximum width of 640px (adjust as needed) */
+
+
+
 
 
 .card1 {
@@ -31,6 +38,8 @@
     backdrop-filter: blur(3.6708710193634033px);
 }
 
+
+
 .card2 {
     padding: 60px 40px;
     flex-direction: column;
@@ -46,6 +55,15 @@
     backdrop-filter: blur(3.6708710193634033px);
 }
 
+.domain1{
+    border: 1.5px solid #070bfb;
+}
+.domain2{
+    border: 1.5px solid #FBD007;
+}
+.domain3{
+    border: 1.5px solid#fb0707;
+}
 .card3 {
     padding: 60px 40px;
     flex-direction: column;
@@ -60,6 +78,83 @@
     box-shadow: -7px 8px 20px -0.367px rgba(0, 0, 0, 0.28);
     backdrop-filter: blur(3.6708710193634033px);
 }
+
+.domaincard1 {
+    padding: 30px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 0.367px solid #01580b;
+
+    background: linear-gradient(180deg, rgba(20, 90, 0, 0.6) 0%, rgba(16, 155, 3, 0.7) 42.58%, rgba(4, 57, 9, 0.2) 80%);
+
+    box-shadow: -7px 8px 20px -0.367px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(3.6708710193634033px);
+}
+
+.domaincard2 {
+    padding: 30px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 0.367px solid #0d0461;
+
+    background: linear-gradient(180deg, rgba(10, 5, 82, 0.6) 0%, rgba(4, 8, 114, 0.7) 42.58%, rgba(10, 5, 77, 0.2) 80%);
+
+    box-shadow: -7px 8px 20px -0.367px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(3.6708710193634033px);
+}
+
+.domaincard3 {
+    padding: 30px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 0.367px solid #ba079f;
+
+    background: linear-gradient(180deg, rgba(251, 23, 7, 0.6) 0%, rgba(136, 33, 33, 0.7) 42.58%, rgba(32, 2, 2, 0.2) 80%);
+
+    box-shadow: -7px 8px 20px -0.367px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(3.6708710193634033px);
+}
+
+.domaincard4 {
+    padding: 30px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 0.367px solid #6d085e;
+
+    background: linear-gradient(180deg, rgba(198, 42, 130, 0.6) 0%, rgba(112, 17, 94, 0.7) 42.58%, rgba(45, 6, 35, 0.2) 80%);
+
+    box-shadow: -7px 8px 20px -0.367px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(3.6708710193634033px);
+}
+
+.domaincard5 {
+    padding: 30px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 0.367px solid #FBD007;
+
+    background: linear-gradient(180deg, rgba(251, 227, 7, 0.6) 0%, rgba(183, 174, 2, 0.7) 42.58%, rgba(50, 61, 19, 0.2) 80%);
+
+    box-shadow: -7px 8px 20px -0.367px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(3.6708710193634033px);
+}
+
+
 
 /* li {
     list-style-type: circle;
