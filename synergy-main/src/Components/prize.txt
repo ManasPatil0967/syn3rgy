@@ -1,0 +1,62 @@
+track prize code:
+
+            <div className='flex justify-center sm:flex-row mt-36'>
+                <div className='flex flex-col gap-20 sm:flex-row'>
+                    <div className='w-70 h-70 order-1 md:-order-none lg:-mr-10 domaincard1'>
+                        <img src={trophy2} alt='trophy' className='h-24 absolute top-[-65px] left-[130px]' />
+                        <h1 className='text-style mt-4'>10K</h1>
+                        <div className="flex flex-col items-center justify-center">
+                            <h4 className='mt-4 mb-2 text-center text-white font-semibold text-2xl'>Web/App</h4>
+                            <p className='max-w-[270px] text-justify'>
+                                Crafting seamless digital experiences, Web/App development merges creativity and functionality for enhanced user interactions.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div className='w-70 h-70 order-2 md:-order-none domaincard2 z-10'>
+                        <img src={trophy2} alt='trophy' className='h-24 absolute top-[-65px] left-[130px]' />
+                        <h1 className='text-style mt-4'>10K</h1>
+                        <div className="flex flex-col items-center justify-center">
+                            <h4 className='mt-4 mb-2 text-center text-white font-semibold text-2xl'>Web3</h4>
+                            <p className='max-w-[270px] text-justify'>
+                            Web3 emphasizes decentralization and blockchain technology for a more transparent and secure online environment.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='w-70 h-70 order-3 md:-order-none lg:-ml-10 domaincard4'>
+                        <img src={trophy2} alt='trophy' className='h-24 absolute top-[-65px] left-[130px]' />
+                        <h1 className='text-style mt-4'>10K</h1>
+                        <div className="flex flex-col items-center justify-center">
+                            <h4 className='mt-4 mb-2 text-center text-white font-semibold text-2xl'>Gen AI (Generative AI)</h4>
+                            <p className='max-w-[270px] text-justify    '>
+                            Harness the transformative potential of Generative AI to create push the boundaries of creativity and drive unprecedented innovation across all industries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='flex justify-center sm:flex-row mt-36'>
+                <div className='flex flex-col gap-20 sm:flex-row'>
+                    <div className='w-70 h-70 order-1 md:-order-none lg:-mr-10 domaincard3'>
+                        <img src={trophy2} alt='trophy' className='h-24 absolute top-[-65px] left-[130px]' />
+                        <h1 className='text-style mt-4'>10K</h1>
+                        <div className="flex flex-col items-center justify-center">
+                            <h4 className='mt-4 mb-2 text-center text-white font-semibold text-2xl'>ML (Machine Learning)</h4>
+                            <p className='max-w-[270px] text-justify'>
+                            Uncovering insights from data, ML fuels informed decision-making and drives innovation with advanced analytics and machine learning algorithms.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div className='w-70 h-70 order-2 md:-order-none domaincard5 z-10'>
+                        <img src={trophy2} alt='trophy' className='h-24 absolute top-[-65px] left-[130px]' />
+                        <h1 className='text-style mt-4'>10K</h1>
+                        <div className="flex flex-col items-center justify-center">
+                            <h4 className='mt-4 mb-2 text-center text-white font-semibold text-2xl'>Cybersecurity:</h4>
+                            <p className='max-w-[270px] text-justify'>
+                            Cybersecurity safeguards against threats, ensuring data integrity and privacy in an ever-evolving digital landscape.
+                           </p>
+                        </div>
+                    </div>
+                </div>
+            </div>

@@ -7,14 +7,14 @@ import { ReactComponent as Hero } from "./assests/hero.svg";
 import heroLego from "./assests/hero_lego.png";
 import heroBg from "./assests/hero_bg.png";
 import "animate.css";
-//import MagnetMouse from "magnet-mouse";
+import MagnetMouse from "magnet-mouse";
 import { Toaster } from 'react-hot-toast';
 import { useEffect } from "react";
 import Timelines from "./Components/Timelines";
 import devfolio from "./assests/devfolio.png";
 import polygon from "./assests/polygon.png";
 import ethindia from "./assests/ethindia.png";
-//import collab from "./assests/collab.png";
+import collab from "./assests/collab.png";
 
 import Contact from "./Components/Contact";
 import FaqAccordion from "./Components/Faq";
@@ -40,7 +40,7 @@ function App() {
         {/* a 100vh container, each section slide up like caraousel */}
         {/* use section for each with id="{name}" */}
         <section id="home" className="relative flex h-screen flex-col justify-center ">
-          <img src="./assests/collab.png" alt="logo all"  className="absolute top-0 right-4 h-16"/>
+          <img src={collab} alt="logo all"  className="absolute top-0 right-4 h-16"/>
           <div className="flex relative h-full flex-col items-center justify-end">
             <Hero className="w-80 md:w-[800px] animate__fadeInDown animate__animated" />
             <img
