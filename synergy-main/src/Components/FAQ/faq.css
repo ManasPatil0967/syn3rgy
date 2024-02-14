@@ -1,0 +1,60 @@
+.faq-accordion {
+    width: 100%;
+}
+
+.faq-question::after {
+    content: "";
+
+    background-image: url('../../assests/arrowDown.svg');
+    background-size: contain;
+
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    margin-right: 10px;
+
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    transition: all .4s linear;
+}
+
+.faq-question.faq-open::after {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-question {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+
+    position: relative;
+}
+
+.faq-answer {
+    display: none;
+}
+
+.faq-question.faq-open+.faq-answer {
+    display: block;
+    opacity: 0;
+    animation: appear-faq .4s linear forwards;
+}
+
+@keyframes appear-faq {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

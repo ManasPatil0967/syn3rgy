@@ -17,7 +17,7 @@ import ethindia from "./assests/ethindia.png";
 import collab from "./assests/collab.png";
 
 import Contact from "./Components/Contact";
-import FaqAccordion from "./Components/Faq";
+import FaqAccordion from "./Components/FAQ/Faq";
 
 function App() {
   useEffect(() => {
@@ -40,7 +40,7 @@ function App() {
         {/* a 100vh container, each section slide up like caraousel */}
         {/* use section for each with id="{name}" */}
         <section id="home" className="relative flex h-screen flex-col justify-center ">
-          <img src={collab} alt="logo all"  className="absolute top-0 right-4 h-16"/>
+          <img src={collab} alt="logo all"  className="collab_logo absolute top-0 right-4 h-16"/>
           <div className="flex relative h-full flex-col items-center justify-end">
             <Hero className="w-80 md:w-[800px] animate__fadeInDown animate__animated" />
             <img
@@ -124,15 +124,15 @@ function App() {
           </div>
           {/* <Sponsors></Sponsors> */}
         </section>
-        {/* <section id="faqs" className="h-screen pt-40">
-          <h1 className="text-style">FAQs</h1>
+        <section id="faqs" className="my-40">
+          <p className="section-title mb-10">FAQs</p>
           <div className="faq-accordion">
-          <FaqAccordion question="" answer="" />
+            <FaqAccordion question="" answer="" />
           </div>
-          
-        </section> */}
+        </section>
+
         <section id="contact" className="">
-          <h1 className="font-semibold text-4xl text-center md:text-8xl tracking-widest text-primary-strokes"
+          <h1 className="font-semibold mt-[5rem] text-4xl text-center md:text-8xl tracking-widest text-primary-strokes"
             data-content="Contact">Contact</h1>
           <Contact />
         </section>
