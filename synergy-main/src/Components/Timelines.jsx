@@ -48,7 +48,7 @@ const Timelines = () => {
         <>
             <div className="main_text">
                 <div className="md:px-36 px-4 text-center text-white text-base md:text-xl">
-                    <p>Scheduled for February 25th and 26th, 2024, it is set to be an enriching experience for all involved. Participants can expect not only to compete but also to collaborate, learn, and make meaningful contributions to the advancement of crucial fields.</p>
+                    <p>Scheduled for February 24th and 25th, 2024, it is set to be an enriching experience for all involved. Participants can expect not only to compete but also to collaborate, learn, and make meaningful contributions to the advancement of crucial fields.</p>
                 </div>
             </div>
 
