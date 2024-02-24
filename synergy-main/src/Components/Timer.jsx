@@ -23,7 +23,7 @@ const Timer = () => {
 
     const savedCallback = useRef();
 
-    const eventDateTime = new Date('February 25, 2024 11:00:00').getTime();
+    const eventDateTime = new Date('February 25, 2024 11:30:00').getTime();
 
     const calculateTimeRemaining = () => {
         const currentTime = new Date().getTime();
