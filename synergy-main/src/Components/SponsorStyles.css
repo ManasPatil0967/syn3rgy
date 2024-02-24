@@ -113,10 +113,10 @@ body #cdawrap {
   grid-area: prev;
 }
 
-canvas {
+/* canvas {
     background: transparent;
   height: 50vh;
-}
+} */
 
 @media screen and (min-width: 53em) {
   .frame {

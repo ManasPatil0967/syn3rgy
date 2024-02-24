@@ -18,6 +18,7 @@ import 'animate.css'
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
 
+import { FiClock } from "react-icons/fi";
 
 const Navbar = () => {
   const [current, setcurrent] = useState("home");
@@ -50,6 +51,17 @@ const Navbar = () => {
         >
           <FiBookOpen size="18" />
           <p>About</p>
+        </a>
+
+        <a
+          href="#timer"
+          className={`text-white text-sm font-medium tracking-widest flex gap-2 items-center uppercase ${
+            current === "timer" ? null : "opacity-60"
+          } hover:opacity-80 pointer-events-auto`}
+          onClick={() => setcurrent("timer")}
+        >
+          <FiClock size="18" />
+          <p>Timer</p>
         </a>
 
         <a

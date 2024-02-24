@@ -46,8 +46,8 @@ const Prize = () => {
                     </div>
                 </div>
             </div>
+            <div className="each_domain_prize">Each Domain winner will be Awarded a Prize of 10k</div>
 
-            <h1 className='font-semibold text-4xl text-center md:text-8xl tracking-widest text-primary-strokes pb-40' data-content="Domains">Domains</h1>
             <div className='flex justify-center sm:flex-row mt-16'>
                 <div className='flex flex-col gap-20 sm:flex-row'>
                     <div className='w-70 h-70 order-1 md:-order-none lg:-mr-10 domaincard1 domainCard'>

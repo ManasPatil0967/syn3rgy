@@ -1,0 +1,123 @@
+/* Timer */
+:root {
+    --timerWidth: 60%;
+    --timerHeight: 190px;
+    --timerFontSize: 5em;
+    --backFontSize: 3rem;
+    --timerPadding: 20px 25px;
+    --timerMargin: 25px 20px;
+}
+
+.syn-timer-wrapper {
+    width: 100%;
+}
+
+/* Purely to fix the rotation animation */
+.syn-timer-box {
+    width: var(--timerWidth);
+    height: var(--timerHeight);
+    margin: auto;
+    border-radius: 30px;
+}
+
+.syn-timer {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.syn-colon {
+    font-size: 4rem;
+}
+
+.syn-rotate {
+    transform: rotateY(180deg);
+}
+
+.syn-timer-box:hover .syn-timer {
+    transform: rotateY(180deg);
+}
+
+.syn-timer-box:hover .syn-rotate {
+    display: none;
+    transform: rotateY(0deg);
+}
+.syn-timer-box:hover .syn-timer-front {
+    display: none;
+}
+
+.syn-timer-front,
+.syn-timer-back {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(251, 208, 5, 1);
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 4px solid rgba(251, 208, 5, 1);
+    color: white;
+    text-align: center;
+}
+
+.syn-timer-front>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: var(--timerMargin);
+    padding: var(--timerPadding);
+}
+
+.syn-timer-front>div {
+    font-weight: 100;
+}
+
+.syn-timer-front>div>span {
+    font-size: var(--timerFontSize);
+    margin-bottom: 10px;
+}
+
+.syn-timer-front>h1 {
+    position: relative;
+    bottom: 20px;
+    font-size: var(--timerFontSize);
+}
+
+.syn-timer-back {
+    font-size: var(--backFontSize);
+    transform: rotateY(180deg);
+}
+
+@media screen and (max-width:1400px) {
+    :root {
+        --timerWidth: 80%;
+    }
+}
+
+@media screen and (max-width:910px) {
+    :root {
+        --timerPadding: 10px 15px;
+        --timerWidth: 90%;
+        --timerFontSize: 3em;
+        --timerMargin: 15px 5px;
+        --timerHeight: 180px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    :root {
+        --timerWidth: 100%;
+        --timerPadding: 5px 10px;
+        --timerFontSize: 2.5em;
+        --timerMargin: 2px;
+        --backFontSize: 1em;
+        --timerHeight: 150px;
+    }
+}

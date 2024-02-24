@@ -18,6 +18,7 @@ import collab from "./assests/collab.png";
 
 import Contact from "./Components/Contact";
 import FaqAccordion from "./Components/FAQ/Faq";
+import Timer from "./Components/Timer";
 
 function App() {
   useEffect(() => {
@@ -73,19 +74,32 @@ function App() {
           />
         </section>
 
-        <section id="about" className="h-screen">
-          <h1 className="text-style">About</h1>
+        <section id="about" className="mb-40 mt-56">
+          <div className="flex flex-wrap items-center w-full h-full">
+            <div className="w-full flex flex-wrap gap-16">
+              <p className="section-title w-full">About</p>
 
-          <div className="p-4 md:p-40 md:pt-52 text-center text-white text-base md:text-2xl animate__fadeInRight animate__animated">
-            SYN3RGY stands as a beacon of collaborative innovation, bringing together the collective efforts of DJS NSDC, DJS SIGAI, and DJS ISACA. Our 24-hour Hackathon is more than just a competition; it's a testament to the power of teamwork and creativity.
+              <div className="p-4 md:px-32 text-center text-white text-base md:text-2xl animate__fadeInRight animate__animated">
+                SYN3RGY stands as a beacon of collaborative innovation, bringing together the collective efforts of DJS NSDC, DJS SIGAI, and DJS ISACA. Our 24-hour Hackathon is more than just a competition; it's a testament to the power of teamwork and creativity.
 
-            Inspired by the iconic building blocks of LEGO, SYN3RGY aims to immerse participants in a uniquely creative and innovative environment. The hackathon invites teams to engage in a spirited battle for a coveted position among the top 50.
+                Inspired by the iconic building blocks of LEGO, SYN3RGY aims to immerse participants in a uniquely creative and innovative environment. The hackathon invites teams to engage in a spirited battle for a coveted position among the top 50.
 
-            With a diverse range of tech domains including Data science, AI & ML, Blockchain, Cybersecurity, Web/App Development, and Open Innovation, SYN3RGY offers participants the opportunity to explore challenges that traverse various frontiers of technology.
+                With a diverse range of tech domains including Data science, AI & ML, Blockchain, Cybersecurity, Web/App Development, and Open Innovation, SYN3RGY offers participants the opportunity to explore challenges that traverse various frontiers of technology.
 
+              </div>
+            </div>
           </div>
-
         </section>
+        
+        <section id="timer" className="h-screen relative">
+          <div className="flex flex-wrap w-full h-full items-center">
+            <div className="w-full flex flex-wrap gap-16">
+              <p className="section-title w-full">Coding Round Ends in</p>
+              <Timer />
+            </div>
+          </div>
+        </section>
+
         <Prize />
         <section id="timeline" className="pt-40">
           <h1

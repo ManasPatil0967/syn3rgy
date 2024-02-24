@@ -51,7 +51,7 @@ const FaqAccordion = () => {
 
 		{
 			question: "How can I stay updated with event announcements?",
-			answer: <>Follow DJS ISACA on {<a className='underline' href='https://www.instagram.com/djs_isaca' target='_blank' rel="noopener noreferrer">djs_isaca</a>}, DJS NSDC on {<a className='underline' href='https://www.instagram.com/djs.nsdc' target='_blank' rel="noopener noreferrer">djs.nsdc</a>} and DJS ACM SIG-AI on {<a className='underline' href='https://www.instagram.com/djs.sigai' target='_blank' rel="noopener noreferrer">djs.sigai</a>} for real-time updates and exciting announcements.</>,
+            answer: <>Follow DJS ISACA on {<a className='underline' href='https://www.instagram.com/djs_isaca' target='_blank' rel="noopener noreferrer">djs_isaca</a>}, DJS NSDC on {<a className='underline' href='https://www.instagram.com/djs.nsdc' target='_blank' rel="noopener noreferrer">djs.nsdc</a>} and DJS ACM SIG-AI on {<a className='underline' href='https://www.instagram.com/djs.sigai' target='_blank' rel="noopener noreferrer">djs.sigai</a>} for real-time updates and exciting announcements.</>,
 		},
 		
 		{
